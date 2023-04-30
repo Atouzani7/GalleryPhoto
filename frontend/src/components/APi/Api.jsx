@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "@components/APi/Api.scss";
+import "./Api.scss";
 
 function Api() {
   const [data, setData] = useState(null);
@@ -12,7 +12,7 @@ function Api() {
       .then((result) => setData(result))
       .catch((error) => console.error(error));
   }, []);
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="all">

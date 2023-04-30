@@ -1,7 +1,7 @@
 import React from "react";
 
-const Affiche = () => {
-  return <div></div>;
-};
+function Affiche() {
+  return <div />;
+}
 
 export default Affiche;
