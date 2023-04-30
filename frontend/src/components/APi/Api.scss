@@ -1,0 +1,20 @@
+.wrap {
+  // flex-wrap: wrap;
+  //   flex-direction: row;
+  width: 100vw;
+  display: contents;
+  justify-content: center;
+  // flex-direction: row;
+  justify-content: center;
+  border: 3px red solid;
+  .imgGallery {
+    height: 60vh;
+    // display: flex;
+    justify-content: center;
+    margin: 5px;
+    flex-direction: row;
+    box-sizing: content-box;
+    justify-content: end;
+    border: 3px burlywood solid;
+  }
+}
