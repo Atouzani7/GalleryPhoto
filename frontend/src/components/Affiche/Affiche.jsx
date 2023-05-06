@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { getApi } from "@components/APi/Api";
-import "../API/Api.scss";
+import getApi from "@components/APi/Api";
+import "../APi/Api.scss";
 import CardAffiche from "@components/CardAffiche/CardAffiche";
 
-const Affiche = () => {
+function Affiche() {
   const [dataPhoto, setDataPhoto] = useState([]);
 
   useEffect(() => {
@@ -12,10 +12,10 @@ const Affiche = () => {
         setDataPhoto(affiche);
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
       });
   }, []);
-  console.log(dataPhoto);
+  // console.log(dataPhoto);
   return (
     <div className="all">
       {dataPhoto ? (
@@ -29,7 +29,7 @@ const Affiche = () => {
       )}
     </div>
   );
-};
+}
 
 export default Affiche;
 
