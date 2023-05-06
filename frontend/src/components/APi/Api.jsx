@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Api.scss";
 
 function Api() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState("");
 
   useEffect(() => {
     fetch(
