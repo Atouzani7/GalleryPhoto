@@ -1,4 +1,23 @@
-import React, { useEffect, useState } from "react";
+const ACCESS_KEY = "9zgXOCJrtsTEp-Djy4SaTa3549N7fR27-2J9NzxjKeM";
+const getApi = () => {
+  return (
+    fetch(`https://api.unsplash.com/photos/?client_id=${ACCESS_KEY}`)
+      .then((response) => response.json())
+      /* .then((data) => console.log(data)) */
+      .catch((error) => console.error(error))
+  );
+};
+export { getApi };
+
+/* const ACCESS_KEY = "9zgXOCJrtsTEp-Djy4SaTa3549N7fR27-2J9NzxjKeM";
+const getApi = () => {
+  return fetch(`https://api.unsplash.com/photos/?client_id=${ACCESS_KEY}`)
+    .then((response) => response.json())
+    .catch((error) => console.error(error));
+};
+export { getApi }; */
+
+/* import React, { useEffect, useState } from "react";
 import "./Api.scss";
 
 function Api() {
@@ -31,4 +50,4 @@ function Api() {
   );
 }
 
-export default Api;
+export default Api; */
